@@ -16,9 +16,9 @@ class SearchBar extends React.Component {
     }
 
     sortByOptions = {
-        '最佳匹配': 'best_match',
-        '最高评级': 'rating',
-        '最多光顾': 'review_count'  
+        'Best Match': 'best_match',
+        'Highest Rated': 'rating',
+        'Most Viewed': 'review_count'  
     };
 
     getSortByClass(sortByOption) {
@@ -72,11 +72,11 @@ class SearchBar extends React.Component {
                     </ul>
                 </div>
                 <div className="SearchBar-fields">
-                    <input onChange={this.handleTermChange} placeholder="英文输入想要搜索的商家饭店/旅馆/机场...：）" />
-                    <input onChange={this.handleLocationChange} placeholder="英文输入国家和地区：）" />
+                    <input onChange={this.handleTermChange} placeholder="Enter the business you want to search(restaurant, hotel, museum etc.)...：）" />
+                    <input onChange={this.handleLocationChange} placeholder="where do you want to search?" />
                 </div>
                 <div className="SearchBar-submit">
-                    <a onClick={this.handleSearch}>一起去看看</a>
+                    <a onClick={this.handleSearch}>Go get it</a>
                 </div>
             </div>
         );
